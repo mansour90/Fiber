@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --main-color: #fbf8f3;
+  --secondary-color: #4d14d1;
+  --dark-color: #0c0909;
+  --dark-grey-color: #505050;
+  --light-grey-color: #dadada;
+  --white-color: #fff;
+
+  /* Font Family */
+  --font-family: 'Inter', sans-serif;
+}
+
+/* Reset */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* End Reset */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  background-color: var(--main-color);
+}
+
+.mobile-container {
+  width: calc(100% - 74px);
+  margin: auto;
+  /* background-color: red; */
+}
+
+.mobile-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.8rem;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15rem;
+  transition: all 0.3s ease;
+}
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-menu {
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.link-menu {
+  color: var(--dark-color);
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.brand-logo a {
+  font-weight: 700;
+  color: var(--dark-color);
+  font-size: 2.6rem;
+}
+.menu-open .bx-menu {
+  font-size: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bx-x {
+  cursor: pointer;
+  font-size: 4rem;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.btn-menu {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.btn-menu:hover {
+  opacity: 0.8;
+}
+
+.btn-blue {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+.btn-outline {
+  background-color: var(--light-grey-color);
+  color: var(--dark-grey-color);
+}
