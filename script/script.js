@@ -1,6 +1,7 @@
 const openMenu = document.querySelector('.menu-open');
 const closeMenu = document.querySelector('.close-menu');
 const menu = document.querySelector('.mobile-menu');
+const listMenu = document.querySelectorAll('.link-menu')
 
 openMenu.addEventListener('click', openTheMenu);
 closeMenu.addEventListener('click', closeTheMenu);
@@ -12,3 +13,7 @@ function openTheMenu() {
 function closeTheMenu() {
   menu.classList.remove('open')
 }
+
+listMenu.forEach(function(list) {
+  menu.classList.remove('open')
+})
