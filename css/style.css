@@ -161,12 +161,19 @@ h1 {
   padding-block: 2rem;
   margin-bottom: 2rem;
 }
-.link{
+.link {
   text-align: center;
   display: block;
   text-decoration: underline;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
   font-weight: 800;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.header-image {
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 0;
 }
