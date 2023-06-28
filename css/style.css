@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 :root {
@@ -20,6 +21,10 @@
 }
 
 /* Reset */
+img {
+  max-width: 100%;
+  display: block;
+}
 a {
   text-decoration: none;
 }
@@ -138,4 +143,30 @@ body {
 .btn-outline {
   background-color: var(--light-grey-color);
   color: var(--dark-grey-color);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--secondary-color);
+  margin-block: 2.4rem;
+}
+.sub-text {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.header-btn {
+  width: 100%;
+  padding-block: 2rem;
+  margin-bottom: 2rem;
+}
+.link{
+  text-align: center;
+  display: block;
+  text-decoration: underline;
+  color:var(--secondary-color);
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
