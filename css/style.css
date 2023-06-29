@@ -67,6 +67,16 @@ body {
   margin-top: 3.8rem;
 }
 
+.nav-sticky {
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  padding-inline: 4rem;
+  padding-block: 1rem;
+  background-color: var(--main-color);
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.08);
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -168,7 +178,7 @@ h1 {
   color: var(--secondary-color);
   font-weight: 800;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .header-image {
@@ -176,4 +186,34 @@ h1 {
   max-width: 100%;
   margin: auto;
   margin-top: 0;
+}
+
+.header-info {
+  width: 100%;
+}
+
+.credit-card {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--dark-grey-color);
+}
+.credit-card img {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.template {
+  color: var(--dark-grey-color);
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.template img {
+  margin-right: 1rem;
+}
+
+.header {
+  margin-bottom: 4.4rem;
 }
